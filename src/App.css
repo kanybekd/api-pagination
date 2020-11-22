@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 950px;
+  /* border:1px solid red; */
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movies {
+  /* border:2px solid green; */
+  display:flex;
+  width: 100%;
+
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding-left: 25px;
+  /* margin-left: 40px; */
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie {
+  margin: 0 30px 10px 0;
+  list-style-type: none;
+  display: inline-block;
+  width: 200px;
+  /* border:1px solid blue; */
+  background: rgb(230, 233, 227);
+  /* padding-left: 5px; */
+  box-shadow: 0 0 10px rgb(103, 156, 170);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.details {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+img{
+  width: 100%;
+}
+.head{
+  width: 100%;
+  /* border:1px solid red; */
+  margin:20px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  background-color: rgb(24, 173, 173);
+  padding-top:10px;
+  padding-bottom:10px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .modal{
+  border:1px solid red;
+  width: 200px;
+  height: 200px;
+  background:white;
+  z-index: 1;
+} */
+.movies:hover{
+  cursor: pointer;
+}
+.history{
+  /* border:1px solid red; */
+  /* width: 150px; */
+  display:flex;
+  /* border:10px solid red; */
+  margin:0 10px;
+  padding:5px;
+  box-shadow: 0 0 10px rgb(209, 191, 194);
+  border-radius: 10px;
+}
+.image{
+  /* display:flex; */
+  /* margin-left:10px; */
+  width: 140px;
+  margin:0 auto;
+  /* border:1px solid red; */
+  
+}
+.internal-img{
+  /* border:1px solid red; */
+  width: 90px;
+  margin-left:45px;
+  padding:5px;
+}
+ .pop{
+  margin-left:10px;
+  margin-bottom: 5px;
+}
+.image img{
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
